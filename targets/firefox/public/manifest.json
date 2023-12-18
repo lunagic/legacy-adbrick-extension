@@ -16,6 +16,11 @@
 		"scripts": ["src/background.js"],
 		"type": "module"
 	},
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "contact@adbrick.org"
+		}
+	},
 	"permissions": ["declarativeNetRequest"],
 	"declarative_net_request": {
 		"rule_resources": [
