@@ -1,0 +1,2 @@
+# extension
+ The AdBrick extension
