@@ -11,6 +11,8 @@ build: build-npm
 build-npm:
 	[ -d node_modules ] || npm install
 	npm run build
+	zip -r dist/chromium/* dist/chromium.zip
+	zip -r dist/firefox/* dist/firefox.zip
 
 ## Test the project
 test: test-npm
