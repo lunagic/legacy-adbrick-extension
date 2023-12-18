@@ -1,2 +1,3 @@
 # extension
- The AdBrick extension
+
+The AdBrick extension

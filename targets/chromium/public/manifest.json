@@ -1,0 +1,29 @@
+{
+	"manifest_version": 3,
+	"name": "AdBrick",
+	"description": "A 100% free ad blocker to protect you and enhance your browsing experience",
+	"version": "0.0.1",
+	"icons": {
+		"16": "assets/icon16.png",
+		"32": "assets/icon32.png",
+		"48": "assets/icon48.png",
+		"128": "assets/icon128.png"
+	},
+	"action": {
+		"default_popup": "src/popup.html"
+	},
+	"background": {
+		"service_worker": "src/background.js",
+		"type": "module"
+	},
+	"permissions": ["declarativeNetRequest"],
+	"declarative_net_request": {
+		"rule_resources": [
+			{
+				"id": "adbrick_ruleset",
+				"enabled": true,
+				"path": "assets/rules.json"
+			}
+		]
+	}
+}

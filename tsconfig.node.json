@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"composite": true,
+		"skipLibCheck": true,
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"allowSyntheticDefaultImports": true
+	},
+	"include": [
+		"targets/firefox/vite.config.ts",
+		"targets/chromium/vite.config.ts"
+	]
+}

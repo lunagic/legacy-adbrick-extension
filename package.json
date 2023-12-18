@@ -1,0 +1,22 @@
+{
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "tsc && vite build --config targets/chromium/vite.config.ts && vite build --config targets/firefox/vite.config.ts",
+		"lint": "prettier --check . && tsc --noEmit",
+		"fix": "prettier --write .",
+		"test": "echo TODO"
+	},
+	"dependencies": {
+		"@aaronellington/reset-css": "^0.0.13",
+		"preact": "^10.19.3"
+	},
+	"devDependencies": {
+		"@preact/preset-vite": "^2.7.0",
+		"@types/chrome": "^0.0.254",
+		"@types/node": "^20.10.5",
+		"prettier": "3.1.1",
+		"typescript": "^5.2.2",
+		"vite": "^5.0.8"
+	}
+}
