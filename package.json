@@ -2,7 +2,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "tsc && vite build --config targets/chromium/vite.config.ts && vite build --config targets/firefox/vite.config.ts",
+		"build": "tsc && vite build --config targets/apple/vite.config.ts && vite build --config targets/chromium/vite.config.ts && vite build --config targets/firefox/vite.config.ts",
 		"lint": "prettier --check . && tsc --noEmit",
 		"fix": "prettier --write .",
 		"test": "echo TODO"

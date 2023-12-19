@@ -7,6 +7,7 @@
 		"allowSyntheticDefaultImports": true
 	},
 	"include": [
+		"targets/apple/vite.config.ts",
 		"targets/firefox/vite.config.ts",
 		"targets/chromium/vite.config.ts"
 	]

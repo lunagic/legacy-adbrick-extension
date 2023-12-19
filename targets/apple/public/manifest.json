@@ -1,0 +1,39 @@
+{
+	"manifest_version": 3,
+	"default_locale": "en",
+	"name": "__MSG_extension_name__",
+	"description": "__MSG_extension_description__",
+	"version": "1.0",
+	"icons": {
+		"48": "images/icon48.png",
+		"96": "images/icon96.png",
+		"128": "images/icon128.png",
+		"256": "images/icon256.png",
+		"512": "images/icon512.png"
+	},
+	"action": {
+		"default_popup": "src/popup.html",
+		"default_icon": {
+			"16": "images/toolbar16.png",
+			"19": "images/toolbar19.png",
+			"32": "images/toolbar32.png",
+			"38": "images/toolbar38.png",
+			"48": "images/toolbar48.png",
+			"72": "images/toolbar72.png"
+		}
+	},
+	"background": {
+		"service_worker": "src/background.js",
+		"type": "module"
+	},
+	"permissions": ["declarativeNetRequest"],
+	"declarative_net_request": {
+		"rule_resources": [
+			{
+				"id": "adbrick_ruleset",
+				"enabled": true,
+				"path": "assets/rules.json"
+			}
+		]
+	}
+}

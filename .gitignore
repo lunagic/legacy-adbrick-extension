@@ -1,5 +1,6 @@
 # Temp
 /dist/
+/apple/Shared (Extension)/Resources/build
 
 # Node
 /node_modules/
