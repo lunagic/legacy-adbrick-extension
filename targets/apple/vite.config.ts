@@ -6,7 +6,7 @@ export default defineConfig({
 	plugins: [preact()],
 	publicDir: resolve(__dirname, "public"),
 	build: {
-		outDir: "apple/Shared (Extension)/Resources/build",
+		outDir: "apple/AdBrick/Shared (Extension)/Resources/",
 		rollupOptions: {
 			output: {
 				entryFileNames: `src/[name].js`,

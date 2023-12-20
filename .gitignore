@@ -1,6 +1,9 @@
 # Temp
 /dist/
-/apple/Shared (Extension)/Resources/build
+/apple/AdBrick/Shared (Extension)/Resources/
 
 # Node
 /node_modules/
+
+# Xcode
+xcuserdata

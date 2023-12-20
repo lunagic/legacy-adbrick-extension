@@ -1,0 +1,938 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93020E402B32844B00FAA4B0 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 93020E3E2B32844B00FAA4B0 /* assets */; };
+		93020E412B32844B00FAA4B0 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 93020E3E2B32844B00FAA4B0 /* assets */; };
+		93020E422B32844B00FAA4B0 /* src in Resources */ = {isa = PBXBuildFile; fileRef = 93020E3F2B32844B00FAA4B0 /* src */; };
+		93020E432B32844B00FAA4B0 /* src in Resources */ = {isa = PBXBuildFile; fileRef = 93020E3F2B32844B00FAA4B0 /* src */; };
+		9327DAF62B327FFE00E034BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327DAF52B327FFE00E034BA /* AppDelegate.swift */; };
+		9327DAF82B327FFE00E034BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327DAF72B327FFE00E034BA /* SceneDelegate.swift */; };
+		9327DAFB2B327FFE00E034BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9327DAF92B327FFE00E034BA /* LaunchScreen.storyboard */; };
+		9327DAFE2B327FFE00E034BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9327DAFC2B327FFE00E034BA /* Main.storyboard */; };
+		9327DB072B327FFE00E034BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327DB062B327FFE00E034BA /* AppDelegate.swift */; };
+		9327DB0A2B327FFE00E034BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9327DB082B327FFE00E034BA /* Main.storyboard */; };
+		9327DB112B327FFE00E034BA /* AdBrick Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9327DB102B327FFE00E034BA /* AdBrick Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9327DB1B2B327FFE00E034BA /* AdBrick Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9327DB1A2B327FFE00E034BA /* AdBrick Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9327DB212B327FFE00E034BA /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 9327DADC2B327FFD00E034BA /* Main.html */; };
+		9327DB222B327FFE00E034BA /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 9327DADC2B327FFD00E034BA /* Main.html */; };
+		9327DB232B327FFE00E034BA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9327DADE2B327FFD00E034BA /* Icon.png */; };
+		9327DB242B327FFE00E034BA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9327DADE2B327FFD00E034BA /* Icon.png */; };
+		9327DB252B327FFE00E034BA /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 9327DADF2B327FFD00E034BA /* Style.css */; };
+		9327DB262B327FFE00E034BA /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 9327DADF2B327FFD00E034BA /* Style.css */; };
+		9327DB272B327FFE00E034BA /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 9327DAE02B327FFD00E034BA /* Script.js */; };
+		9327DB282B327FFE00E034BA /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 9327DAE02B327FFD00E034BA /* Script.js */; };
+		9327DB292B327FFE00E034BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327DAE12B327FFD00E034BA /* ViewController.swift */; };
+		9327DB2A2B327FFE00E034BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327DAE12B327FFD00E034BA /* ViewController.swift */; };
+		9327DB2B2B327FFE00E034BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9327DAE22B327FFE00E034BA /* Assets.xcassets */; };
+		9327DB2C2B327FFE00E034BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9327DAE22B327FFE00E034BA /* Assets.xcassets */; };
+		9327DB2D2B327FFE00E034BA /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327DAE42B327FFE00E034BA /* SafariWebExtensionHandler.swift */; };
+		9327DB2E2B327FFE00E034BA /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9327DAE42B327FFE00E034BA /* SafariWebExtensionHandler.swift */; };
+		9327DB332B327FFE00E034BA /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 9327DAE82B327FFE00E034BA /* manifest.json */; };
+		9327DB342B327FFE00E034BA /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 9327DAE82B327FFE00E034BA /* manifest.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9327DB122B327FFE00E034BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9327DAD62B327FFD00E034BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9327DB0F2B327FFE00E034BA;
+			remoteInfo = "AdBrick Extension (iOS)";
+		};
+		9327DB1C2B327FFE00E034BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9327DAD62B327FFD00E034BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9327DB192B327FFE00E034BA;
+			remoteInfo = "AdBrick Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9327DB442B327FFE00E034BA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9327DB112B327FFE00E034BA /* AdBrick Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9327DB4B2B327FFE00E034BA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9327DB1B2B327FFE00E034BA /* AdBrick Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		93020E3E2B32844B00FAA4B0 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		93020E3F2B32844B00FAA4B0 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		9327DADD2B327FFD00E034BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		9327DADE2B327FFD00E034BA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		9327DADF2B327FFD00E034BA /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		9327DAE02B327FFD00E034BA /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		9327DAE12B327FFD00E034BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9327DAE22B327FFE00E034BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9327DAE42B327FFE00E034BA /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		9327DAE82B327FFE00E034BA /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		9327DAF22B327FFE00E034BA /* AdBrick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdBrick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9327DAF52B327FFE00E034BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9327DAF72B327FFE00E034BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9327DAFA2B327FFE00E034BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9327DAFD2B327FFE00E034BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9327DAFF2B327FFE00E034BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9327DB042B327FFE00E034BA /* AdBrick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdBrick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9327DB062B327FFE00E034BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9327DB092B327FFE00E034BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9327DB0B2B327FFE00E034BA /* AdBrick.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AdBrick.entitlements; sourceTree = "<group>"; };
+		9327DB102B327FFE00E034BA /* AdBrick Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AdBrick Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9327DB152B327FFE00E034BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9327DB1A2B327FFE00E034BA /* AdBrick Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AdBrick Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9327DB1F2B327FFE00E034BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9327DB202B327FFE00E034BA /* AdBrick.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AdBrick.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9327DAEF2B327FFE00E034BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9327DB012B327FFE00E034BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9327DB0D2B327FFE00E034BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9327DB172B327FFE00E034BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9327DAD52B327FFD00E034BA = {
+			isa = PBXGroup;
+			children = (
+				9327DADA2B327FFD00E034BA /* Shared (App) */,
+				9327DAE32B327FFE00E034BA /* Shared (Extension) */,
+				9327DAF42B327FFE00E034BA /* iOS (App) */,
+				9327DB052B327FFE00E034BA /* macOS (App) */,
+				9327DB142B327FFE00E034BA /* iOS (Extension) */,
+				9327DB1E2B327FFE00E034BA /* macOS (Extension) */,
+				9327DAF32B327FFE00E034BA /* Products */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		9327DADA2B327FFD00E034BA /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				9327DAE12B327FFD00E034BA /* ViewController.swift */,
+				9327DAE22B327FFE00E034BA /* Assets.xcassets */,
+				9327DADB2B327FFD00E034BA /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		9327DADB2B327FFD00E034BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9327DADC2B327FFD00E034BA /* Main.html */,
+				9327DADE2B327FFD00E034BA /* Icon.png */,
+				9327DADF2B327FFD00E034BA /* Style.css */,
+				9327DAE02B327FFD00E034BA /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9327DAE32B327FFE00E034BA /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				9327DAE42B327FFE00E034BA /* SafariWebExtensionHandler.swift */,
+				9327DAE52B327FFE00E034BA /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		9327DAE52B327FFE00E034BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93020E3E2B32844B00FAA4B0 /* assets */,
+				93020E3F2B32844B00FAA4B0 /* src */,
+				9327DAE82B327FFE00E034BA /* manifest.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9327DAF32B327FFE00E034BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9327DAF22B327FFE00E034BA /* AdBrick.app */,
+				9327DB042B327FFE00E034BA /* AdBrick.app */,
+				9327DB102B327FFE00E034BA /* AdBrick Extension.appex */,
+				9327DB1A2B327FFE00E034BA /* AdBrick Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9327DAF42B327FFE00E034BA /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				9327DAF52B327FFE00E034BA /* AppDelegate.swift */,
+				9327DAF72B327FFE00E034BA /* SceneDelegate.swift */,
+				9327DAF92B327FFE00E034BA /* LaunchScreen.storyboard */,
+				9327DAFC2B327FFE00E034BA /* Main.storyboard */,
+				9327DAFF2B327FFE00E034BA /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		9327DB052B327FFE00E034BA /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				9327DB062B327FFE00E034BA /* AppDelegate.swift */,
+				9327DB082B327FFE00E034BA /* Main.storyboard */,
+				9327DB0B2B327FFE00E034BA /* AdBrick.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		9327DB142B327FFE00E034BA /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				9327DB152B327FFE00E034BA /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		9327DB1E2B327FFE00E034BA /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				9327DB1F2B327FFE00E034BA /* Info.plist */,
+				9327DB202B327FFE00E034BA /* AdBrick.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9327DAF12B327FFE00E034BA /* AdBrick (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9327DB452B327FFE00E034BA /* Build configuration list for PBXNativeTarget "AdBrick (iOS)" */;
+			buildPhases = (
+				9327DAEE2B327FFE00E034BA /* Sources */,
+				9327DAEF2B327FFE00E034BA /* Frameworks */,
+				9327DAF02B327FFE00E034BA /* Resources */,
+				9327DB442B327FFE00E034BA /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9327DB132B327FFE00E034BA /* PBXTargetDependency */,
+			);
+			name = "AdBrick (iOS)";
+			productName = "AdBrick (iOS)";
+			productReference = 9327DAF22B327FFE00E034BA /* AdBrick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9327DB032B327FFE00E034BA /* AdBrick (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9327DB4C2B327FFE00E034BA /* Build configuration list for PBXNativeTarget "AdBrick (macOS)" */;
+			buildPhases = (
+				9327DB002B327FFE00E034BA /* Sources */,
+				9327DB012B327FFE00E034BA /* Frameworks */,
+				9327DB022B327FFE00E034BA /* Resources */,
+				9327DB4B2B327FFE00E034BA /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9327DB1D2B327FFE00E034BA /* PBXTargetDependency */,
+			);
+			name = "AdBrick (macOS)";
+			productName = "AdBrick (macOS)";
+			productReference = 9327DB042B327FFE00E034BA /* AdBrick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9327DB0F2B327FFE00E034BA /* AdBrick Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9327DB412B327FFE00E034BA /* Build configuration list for PBXNativeTarget "AdBrick Extension (iOS)" */;
+			buildPhases = (
+				9327DB0C2B327FFE00E034BA /* Sources */,
+				9327DB0D2B327FFE00E034BA /* Frameworks */,
+				9327DB0E2B327FFE00E034BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AdBrick Extension (iOS)";
+			productName = "AdBrick Extension (iOS)";
+			productReference = 9327DB102B327FFE00E034BA /* AdBrick Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9327DB192B327FFE00E034BA /* AdBrick Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9327DB482B327FFE00E034BA /* Build configuration list for PBXNativeTarget "AdBrick Extension (macOS)" */;
+			buildPhases = (
+				9327DB162B327FFE00E034BA /* Sources */,
+				9327DB172B327FFE00E034BA /* Frameworks */,
+				9327DB182B327FFE00E034BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AdBrick Extension (macOS)";
+			productName = "AdBrick Extension (macOS)";
+			productReference = 9327DB1A2B327FFE00E034BA /* AdBrick Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9327DAD62B327FFD00E034BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					9327DAF12B327FFE00E034BA = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					9327DB032B327FFE00E034BA = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					9327DB0F2B327FFE00E034BA = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					9327DB192B327FFE00E034BA = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 9327DAD92B327FFD00E034BA /* Build configuration list for PBXProject "AdBrick" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9327DAD52B327FFD00E034BA;
+			productRefGroup = 9327DAF32B327FFE00E034BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9327DAF12B327FFE00E034BA /* AdBrick (iOS) */,
+				9327DB032B327FFE00E034BA /* AdBrick (macOS) */,
+				9327DB0F2B327FFE00E034BA /* AdBrick Extension (iOS) */,
+				9327DB192B327FFE00E034BA /* AdBrick Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9327DAF02B327FFE00E034BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9327DB232B327FFE00E034BA /* Icon.png in Resources */,
+				9327DAFB2B327FFE00E034BA /* LaunchScreen.storyboard in Resources */,
+				9327DB212B327FFE00E034BA /* Main.html in Resources */,
+				9327DB272B327FFE00E034BA /* Script.js in Resources */,
+				9327DB2B2B327FFE00E034BA /* Assets.xcassets in Resources */,
+				9327DAFE2B327FFE00E034BA /* Main.storyboard in Resources */,
+				9327DB252B327FFE00E034BA /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9327DB022B327FFE00E034BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9327DB242B327FFE00E034BA /* Icon.png in Resources */,
+				9327DB262B327FFE00E034BA /* Style.css in Resources */,
+				9327DB0A2B327FFE00E034BA /* Main.storyboard in Resources */,
+				9327DB282B327FFE00E034BA /* Script.js in Resources */,
+				9327DB2C2B327FFE00E034BA /* Assets.xcassets in Resources */,
+				9327DB222B327FFE00E034BA /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9327DB0E2B327FFE00E034BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93020E422B32844B00FAA4B0 /* src in Resources */,
+				9327DB332B327FFE00E034BA /* manifest.json in Resources */,
+				93020E402B32844B00FAA4B0 /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9327DB182B327FFE00E034BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93020E432B32844B00FAA4B0 /* src in Resources */,
+				9327DB342B327FFE00E034BA /* manifest.json in Resources */,
+				93020E412B32844B00FAA4B0 /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9327DAEE2B327FFE00E034BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9327DB292B327FFE00E034BA /* ViewController.swift in Sources */,
+				9327DAF62B327FFE00E034BA /* AppDelegate.swift in Sources */,
+				9327DAF82B327FFE00E034BA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9327DB002B327FFE00E034BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9327DB2A2B327FFE00E034BA /* ViewController.swift in Sources */,
+				9327DB072B327FFE00E034BA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9327DB0C2B327FFE00E034BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9327DB2D2B327FFE00E034BA /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9327DB162B327FFE00E034BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9327DB2E2B327FFE00E034BA /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9327DB132B327FFE00E034BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9327DB0F2B327FFE00E034BA /* AdBrick Extension (iOS) */;
+			targetProxy = 9327DB122B327FFE00E034BA /* PBXContainerItemProxy */;
+		};
+		9327DB1D2B327FFE00E034BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9327DB192B327FFE00E034BA /* AdBrick Extension (macOS) */;
+			targetProxy = 9327DB1C2B327FFE00E034BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9327DADC2B327FFD00E034BA /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9327DADD2B327FFD00E034BA /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		9327DAF92B327FFE00E034BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9327DAFA2B327FFE00E034BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9327DAFC2B327FFE00E034BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9327DAFD2B327FFE00E034BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9327DB082B327FFE00E034BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9327DB092B327FFE00E034BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9327DB3F2B327FFE00E034BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9327DB402B327FFE00E034BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		9327DB422B327FFE00E034BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FK47T89AUS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AdBrick Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.adbrick.AdBrick.Extension;
+				PRODUCT_NAME = "AdBrick Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9327DB432B327FFE00E034BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FK47T89AUS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AdBrick Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.adbrick.AdBrick.Extension;
+				PRODUCT_NAME = "AdBrick Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9327DB462B327FFE00E034BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FK47T89AUS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = AdBrick;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.adbrick.AdBrick;
+				PRODUCT_NAME = AdBrick;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9327DB472B327FFE00E034BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FK47T89AUS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = AdBrick;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.adbrick.AdBrick;
+				PRODUCT_NAME = AdBrick;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9327DB492B327FFE00E034BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/AdBrick.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AdBrick Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.adbrick.AdBrick.Extension;
+				PRODUCT_NAME = "AdBrick Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9327DB4A2B327FFE00E034BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/AdBrick.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AdBrick Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.adbrick.AdBrick.Extension;
+				PRODUCT_NAME = "AdBrick Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9327DB4D2B327FFE00E034BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/AdBrick.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AdBrick;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.adbrick.AdBrick;
+				PRODUCT_NAME = AdBrick;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9327DB4E2B327FFE00E034BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/AdBrick.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AdBrick;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.adbrick.AdBrick;
+				PRODUCT_NAME = AdBrick;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9327DAD92B327FFD00E034BA /* Build configuration list for PBXProject "AdBrick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9327DB3F2B327FFE00E034BA /* Debug */,
+				9327DB402B327FFE00E034BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9327DB412B327FFE00E034BA /* Build configuration list for PBXNativeTarget "AdBrick Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9327DB422B327FFE00E034BA /* Debug */,
+				9327DB432B327FFE00E034BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9327DB452B327FFE00E034BA /* Build configuration list for PBXNativeTarget "AdBrick (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9327DB462B327FFE00E034BA /* Debug */,
+				9327DB472B327FFE00E034BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9327DB482B327FFE00E034BA /* Build configuration list for PBXNativeTarget "AdBrick Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9327DB492B327FFE00E034BA /* Debug */,
+				9327DB4A2B327FFE00E034BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9327DB4C2B327FFE00E034BA /* Build configuration list for PBXNativeTarget "AdBrick (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9327DB4D2B327FFE00E034BA /* Debug */,
+				9327DB4E2B327FFE00E034BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9327DAD62B327FFD00E034BA /* Project object */;
+}
