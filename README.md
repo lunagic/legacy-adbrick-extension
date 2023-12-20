@@ -2,6 +2,11 @@
 
 The AdBrick extension
 
+## Install
+
+- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adbrick)
+- [Chrome](https://chromewebstore.google.com/detail/adbrick/lceleahfonekbbkkmfoefkldfedghjgl)
+
 ## Build Instructions
 
 - Install dependencies: `make`, `node` (any modern version)
