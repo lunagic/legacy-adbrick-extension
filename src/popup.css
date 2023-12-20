@@ -1,9 +1,15 @@
 @import "@aaronellington/reset-css";
 
+body {
+	min-width: 300px;
+	min-height: 300px;
+}
+
 .container {
 	user-select: none;
-	width: 256px;
-	height: 256px;
+	position: fixed;
+	inset: 0;
+	padding: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
