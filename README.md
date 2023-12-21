@@ -4,6 +4,7 @@ The AdBrick extension
 
 ## Install
 
+- [Safari on macOS](https://apps.apple.com/us/app/adbrick/id6474696501)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adbrick)
 - [Chrome](https://chromewebstore.google.com/detail/adbrick/lceleahfonekbbkkmfoefkldfedghjgl)
 
