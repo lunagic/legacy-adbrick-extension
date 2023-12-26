@@ -58,5 +58,15 @@
 		"condition": {
 			"urlFilter": "*://*googlesyndication.com/*"
 		}
+	},
+	{
+		"id": 7,
+		"priority": 1,
+		"action": {
+			"type": "block"
+		},
+		"condition": {
+			"urlFilter": "*://*amazon-adsystem.com/*"
+		}
 	}
 ]

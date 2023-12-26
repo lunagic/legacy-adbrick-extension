@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+cd apple/AdBrick
+
+# agvtool new-version -all $1
+# agvtool new-marketing-version $1
+agvtool what-marketing-version
