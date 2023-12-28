@@ -3,6 +3,7 @@
 The AdBrick extension
 
 ## Download
+
 [https://adbrick.org/downloads](https://adbrick.org/downloads/)
 
 <!-- ## Build Instructions
