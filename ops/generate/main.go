@@ -89,12 +89,12 @@ func main() {
 
 	file, err := os.Create("src/assets/rules.json")
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 
 	b, err := json.MarshalIndent(things, "", "\t")
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 
 	file.Write(b)
@@ -104,12 +104,12 @@ func getDomainsFromURL(url string) []string {
 	log.Printf("Downloading: %s", url)
 	response, err := http.Get(url)
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 
 	b, err := io.ReadAll(response.Body)
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 	defer response.Body.Close()
 

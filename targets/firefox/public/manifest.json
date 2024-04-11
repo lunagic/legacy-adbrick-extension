@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "AdBrick",
 	"description": "A 100% free ad blocker to protect you and enhance your browsing experience",
-	"version": "0.0.1",
+	"version": "1.0.2",
 	"icons": {
 		"16": "assets/icon16.png",
 		"32": "assets/icon32.png",
