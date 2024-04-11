@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"os"
 	"regexp"
+	"strings"
 )
 
 type Thing struct {
@@ -28,19 +29,20 @@ type ThingCondition struct {
 func main() {
 	// https://firebog.net/
 	files := []string{
+		"ops/generate/adbrick-list.txt",
 		// Suspicious Lists
-		"https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt",
-		"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts",
-		"https://v.firebog.net/hosts/static/w3kbl.txt",
+		// "https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt",
+		// "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts",
+		// "https://v.firebog.net/hosts/static/w3kbl.txt",
 		// Advertising Lists
-		"https://adaway.org/hosts.txt",
-		"https://v.firebog.net/hosts/AdguardDNS.txt",
-		"https://v.firebog.net/hosts/Admiral.txt",
-		"https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
-		"https://v.firebog.net/hosts/Easylist.txt",
-		"https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
-		"https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts",
-		"https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts",
+		// "https://adaway.org/hosts.txt",
+		// "https://v.firebog.net/hosts/AdguardDNS.txt",
+		// "https://v.firebog.net/hosts/Admiral.txt",
+		// "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
+		// "https://v.firebog.net/hosts/Easylist.txt",
+		// "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
+		// "https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts",
+		// "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts",
 		// Tracking & Telemetry Lists
 		// "https://v.firebog.net/hosts/Easyprivacy.txt",
 		// "https://v.firebog.net/hosts/Prigent-Ads.txt",
@@ -81,7 +83,7 @@ func main() {
 					Type: "block",
 				},
 				Condition: ThingCondition{
-					URLFilter: fmt.Sprintf("*://%s/*", domain),
+					URLFilter: fmt.Sprintf("*://*%s/*", domain),
 				},
 			})
 		}
@@ -101,17 +103,30 @@ func main() {
 }
 
 func getDomainsFromURL(url string) []string {
+	var reader io.ReadCloser
+
 	log.Printf("Downloading: %s", url)
-	response, err := http.Get(url)
-	if err != nil {
-		log.Fatal(err)
+	if strings.HasPrefix("https://", url) {
+		response, err := http.Get(url)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		reader = response.Body
+	} else {
+		file, err := os.Open(url)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		reader = file
 	}
 
-	b, err := io.ReadAll(response.Body)
+	b, err := io.ReadAll(reader)
 	if err != nil {
 		log.Fatal(err)
 	}
-	defer response.Body.Close()
+	defer reader.Close()
 
 	domains := []string{}
 

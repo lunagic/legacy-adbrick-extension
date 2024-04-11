@@ -1,6 +1,7 @@
 # Temp
 /dist/
 /apple/AdBrick/Shared (Extension)/Resources/
+/src/assets/rules.json
 
 # Node
 /node_modules/
