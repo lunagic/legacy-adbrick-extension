@@ -1,4 +1,4 @@
-.PHONY: full build build-npm test test-npm lint lint-npm fix fix-npm watch clean
+.PHONY: full build build-list build-npm test test-npm lint lint-npm fix fix-npm watch clean
 
 SHELL=/bin/bash -o pipefail
 $(shell git config core.hooksPath ops/git-hooks)
@@ -6,7 +6,10 @@ $(shell git config core.hooksPath ops/git-hooks)
 full: clean lint test build
 
 ## Build the project
-build: build-npm
+build: build-list build-npm
+
+build-list:
+	go run ops/generate/main.go
 
 build-npm:
 	[ -d node_modules ] || npm install
